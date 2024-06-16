@@ -69,12 +69,14 @@ main {
 }
 
 .right {
+    display: flex;
+    flex-direction: column;
+    flex: 0;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
     margin: 10px;
-    flex: right;
     min-width: 300px;
 }
 
