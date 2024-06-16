@@ -74,7 +74,7 @@ main {
     border-radius: 8px;
     padding: 20px;
     margin: 10px;
-    flex: -800px;
+    flex: -10;
     min-width: 300px;
 }
 
@@ -138,8 +138,11 @@ main {
     border: 2px solid #0b486b; 
     border-radius: 6px;
 }
-.left h1 {
+.title h2 {
+    all:inherit;
     text-align: center;
+    font-size: x-large;
+    font-size: 30px;
     padding: 5px;
     border-bottom: 1px solid #3b3b3b;
 }
