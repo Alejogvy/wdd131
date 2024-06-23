@@ -1,11 +1,3 @@
-<script type="text/javascript">
-    window.onload = function() {
-        document.getElementById('temples-styles').removeAttribute('disabled');
-        document.getElementById('temples-large-styles').removeAttribute('disabled');
-    }
-</script>
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const currentYear = new Date().getFullYear();
     document.getElementById('currentyear').textContent = currentYear;
