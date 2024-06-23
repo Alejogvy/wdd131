@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Alejandro Villamar">
+    <meta name="author" content="Alejandro Villamar">
+    <title>WDD 131 - Dynamic Web Fundamentals - Alejandro Villamar</title>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+            <ul>
+                <li><a href="#" target="_blank">Home</a></li>
+                <li><a href="#" target="_blank">Old</a></li>
+                <li><a href="#" target="_blank">New</a></li>
+                <li><a href="#" target="_blank">Large</a></li>
+                <li><a href="#" target="_blank">Small</a></li>
+            </ul>
+            <button id="hamburger" aria-label="Toggle menu">&#9776;</button>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <h2>Home</h2>
+            <div class="home-container">
+                <figure>
+                    <img src="images/aba.webp" alt="Aba" class="full-width-img">
+                    <figcaption>Aba - Nigeria</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/arequipa.webp" alt="Arequipa" class="full-width-img">
+                    <figcaption>Arequipa - Perú</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/barranquilla.webp" alt="Barranquilla" class="full-width-img">
+                    <figcaption>Barranquilla - Colombia</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/cdmx.webp" alt="Cdmx" class="full-width-img">
+                    <figcaption>Cdmx - México</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/concepcion.webp" alt="Concepción" class="full-width-img">
+                    <figcaption>Concepción - Chile</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/guayaquil.webp" alt="Guayaquil" class="full-width-img">
+                    <figcaption>Guayaquil - Ecuador</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/quito.webp" alt="Quito" class="full-width-img">
+                    <figcaption>Quito - Ecuador</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rome.webp" alt="Rome" class="full-width-img">
+                    <figcaption>Rome - Italy</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/slctemple.webp" alt="Salt Lake City" class="full-width-img">
+                    <figcaption>Salt Lake City - Utah</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Alejandro Villamar | Quito - Ecuador</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
