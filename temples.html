@@ -6,12 +6,21 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Alejandro Villamar">
     <meta name="author" content="Alejandro Villamar">
     <title>WDD 131 - Dynamic Web Fundamentals - Alejandro Villamar</title>
-    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples.css" id="temples-styles" disabled>
     <link rel="stylesheet" href="styles/temples-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="scripts/temples.js" defer></script>
+    <script>
+        // JavaScript para activar las hojas de estilo no críticas después de que la página se haya cargado
+        document.addEventListener('DOMContentLoaded', () => {
+            const TemplesStyles = document.getElementById('temples-styles');
+            if (TemplesStyles) {
+                TemplesStyles.disabled = false;
+            }
+        });
+    </script>
 </head>
 <body>
     <header>
