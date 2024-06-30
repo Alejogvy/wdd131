@@ -73,6 +73,7 @@ ul {
     background-color: var(--box-title-bg-color);
     color: var(--box-title-color);
     padding: 1.4rem;
+    width: auto;
     font-size: 1.2em;
     background-color: #006400;
 }
