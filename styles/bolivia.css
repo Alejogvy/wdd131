@@ -72,7 +72,7 @@ ul {
     position: relative;
     background-color: var(--box-title-bg-color);
     color: var(--box-title-color);
-    padding: 7%;
+    padding: 1.4rem;
     font-size: 1.2em;
     background-color: #006400;
 }
