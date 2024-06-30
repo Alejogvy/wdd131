@@ -77,13 +77,13 @@ ul {
     background-color: #006400;
 }
 
-.weather-icon::before {
-    content: "⛅";
-    font-size: 2em;
-    position: absolute;
-    top: 30px;
-    right: 70px;
-}
+.weather object{
+    flex: content;
+    position: inherit;
+    top: 20px;
+    right: 100px;
+    object-position: 100%;
+}  
 
 footer {
     text-align: center;
@@ -111,15 +111,17 @@ footer {
     .data h2, .weather h2 {
         color: var(--font-color);
         background-color: transparent;
-        padding: 1;
-        font-size: 1.5em;
+        padding: 10;
+        font-size: 2em;
         text-align: center;
     }
-    .weather-icon {
-        content: "⛅";
-        font-size: 1em;
+    .weather object{
         position: absolute;
-        top: 290px;
-        right: 120px;
-    }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 50%;
+        top: 74%;
+        transform: translate(-50%, -50%);
+    }  
 }
