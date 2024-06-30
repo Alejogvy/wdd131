@@ -72,7 +72,7 @@ ul {
     position: relative;
     background-color: var(--box-title-bg-color);
     color: var(--box-title-color);
-    padding: 11px;
+    padding: 7%;
     font-size: 1.2em;
     background-color: #006400;
 }
@@ -80,7 +80,7 @@ ul {
 .weather object{
     flex: content;
     position: inherit;
-    top: 20px;
+    top: 30px;
     right: 100px;
     object-position: 100%;
 }  
@@ -121,7 +121,7 @@ footer {
         justify-content: center;
         align-items: center;
         left: 50%;
-        top: 74%;
+        top: 75%;
         transform: translate(-50%, -50%);
     }  
 }
