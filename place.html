@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Alejandro Villamar">
+    <meta name="author" content="Alejandro Villamar">
+    <title>Bolivia</title>
+    <link rel="stylesheet" href="styles/bolivia.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script defer src="scripts/bolivia.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Bolivia</h1>
+        <picture>
+            <source srcset="images/llama_m.webp" media="(max-width: 600px)">
+            <source srcset="images/llama_p.webp" media="(min-width: 601px)">
+            <img src="images/llama_p.webp alt="Bolivia">
+        </picture>
+    </header>
+    <main>
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 1,098,581 sq km</li>
+                <li><strong>Population:</strong> 11,428,245</li>
+                <li><strong>Capital:</strong> Sucre</li>
+                <li><strong>Languages:</strong> Spanish, Quechua, Aymara</li>
+                <li><strong>Currency:</strong> Bolivian Boliviano</li>
+                <li><strong>Time Zone:</strong> UTC-4</li>
+                <li><strong>Calling Code:</strong> +591</li>
+                <li><strong>Internet TLD:</strong> .bo</li>
+            </ul>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weather-icon"></div>
+            <ul>
+                <li><strong>Temperature:</strong> <span id="temperature">10°C</span></li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind:</strong> 5 km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windchill">N/A</span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Alejandro Villamar | Bolivia</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

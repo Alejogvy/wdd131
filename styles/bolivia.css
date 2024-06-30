@@ -1,0 +1,125 @@
+:root {
+    --main-color: #FF0000;
+    --secondary-color: #FFD700;
+    --background-color: #FFFFFF;
+    --font-color: #000000;
+    --header-bg-color: #006400;
+    --box-bg-color: rgba(255, 255, 255, 0.8);
+    --box-title-bg-color: #006400;
+    --box-title-color: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+header {
+    text-align: center;
+    background-color: var(--header-bg-color);
+    color: var(--secondary-color);
+    padding: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    font-style: italic;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 20px;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.data, .weather {
+    background-color: var(--box-bg-color);
+    padding: 10px;
+    border-radius: 10px;
+    width: 20%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+.data {
+    text-align: center;
+    left: 20px;
+    top: -820px;
+}
+
+.weather {
+    text-align: center;
+    right: 20px;
+    top: -420px;
+}
+
+.data h2, .weather h2 {
+    text-align: left;
+    position: relative;
+    background-color: var(--box-title-bg-color);
+    color: var(--box-title-color);
+    padding: 11px;
+    font-size: 1.2em;
+    background-color: #7dd37e;
+}
+
+.weather-icon::before {
+    content: "⛅";
+    font-size: 2em;
+    position: absolute;
+    top: 30px;
+    right: 70px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #006400;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .data, .weather {
+        display: contents;
+        margin: 20px auto;
+        position: relative;
+        width: 90%;
+        padding: 10px;
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 0;
+        text-align: center;
+        z-index: 0;
+    }
+    .data {
+        margin-top: 20px;
+    }
+    .data h2, .weather h2 {
+        color: var(--font-color);
+        background-color: transparent;
+        padding: 1;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .weather-icon {
+        content: "⛅";
+        font-size: 1em;
+        position: absolute;
+        top: 290px;
+        right: 120px;
+    }
+}
