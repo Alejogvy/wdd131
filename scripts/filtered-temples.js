@@ -83,7 +83,7 @@ const temples = [
   
   function createTempleCard(templeArray) {
     const container = document.querySelector(".home-container");
-    container.innerHTML = ""; // Clear the container before adding new content
+    container.innerHTML = "";
   
     templeArray.forEach(temple => {
       let card = document.createElement("section");
@@ -144,4 +144,3 @@ const temples = [
   
   // Initially display all temples
   filterTemples("home");
-  
